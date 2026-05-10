@@ -49,16 +49,18 @@
             border-radius: 16px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
-        .highlight {
-            background: linear-gradient(120deg, #e0daff 0%, #f0e6ff 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-        }
         .footer {
             margin-top: 60px;
             text-align: center;
             color: #888;
+            font-size: 15px;
+        }
+        .tos-box {
+            background-color: #f3f0ff;
+            padding: 20px;
+            border-left: 4px solid #9F7AEA;
+            border-radius: 8px;
+            margin: 20px 0;
             font-size: 15px;
         }
     </style>
@@ -66,84 +68,66 @@
 <body>
     <div class="container">
         <h1>Privacy Policy – My Apps</h1>
-        <p><strong>Last updated: December 29, 2025</strong></p>
+        <p><strong>Last updated: May 10, 2026</strong></p>
         <p>Thank you for using my apps! This privacy policy applies to <strong>all mobile applications</strong> created by Jayesh Dhanesha. I take your privacy very seriously and collect only the minimum data needed for each app to work properly.</p>
 
         <h2>1. General Principle</h2>
-        <p>I do <strong>not</strong> collect personal information such as your name, email address, Apple ID, contacts, photos, or any other personally identifiable data unless explicitly stated below.</p>
-        <p>All data processing happens locally on your device whenever possible.</p>
+        <p>I do <strong>not</strong> collect personal information such as your name, email address, physical address, or contacts. I do not "link" the technical data I collect to your real-world identity.</p>
 
-        <h2>2. Data Collected Across All Apps</h2>
-        <p>The following applies to every app I publish:</p>
+        <h2>2. Data Collected for Functionality & Analytics</h2>
+        <p>To ensure my apps are reliable and to provide the features you purchased, the following data is collected (Not Linked to Your Identity):</p>
         <ul>
-            <li><strong>Anonymous Analytics</strong>: I use Firebase Analytics (Google) to understand general usage patterns (e.g., which screens are popular, crash reports). This data is completely anonymous and cannot identify you.</li>
-            <li><strong>Device Information</strong>: Basic non-personal info like iOS version and device model — only to fix bugs and improve compatibility.</li>
+            <li><strong>Identifiers</strong>: Anonymous User IDs and Device IDs are used to manage subscription access and prevent fraud.</li>
+            <li><strong>Purchase History</strong>: We track which premium features you have unlocked to ensure they are available across your devices.</li>
+            <li><strong>Diagnostics</strong>: Crash logs and performance metrics (e.g., download speeds) help fix bugs and optimize the app for iOS.</li>
+            <li><strong>Anonymous Analytics</strong>: General usage patterns (e.g., button taps) help me improve the app interface.</li>
         </ul>
 
         <h2>3. App-Specific Data Collection</h2>
-        <p>Certain apps may collect additional data necessary for their core features:</p>
+        <p>Certain apps may require specific hardware access to function:</p>
         <ul>
-            <li><strong>Location-Based Apps</strong> (e.g., tower locator or map tools):<br>
-                With your permission, precise location is used to show nearby points of interest. This data is processed <strong>only on your device</strong> and is never stored or transmitted to my servers.</li>
-            <li><strong>Network & Signal Apps</strong>: Signal strength, network type, and carrier information are read from your device and displayed locally — no data is sent anywhere.</li>
-            <li><strong>Speed Test Apps</strong>: Download/upload speeds are measured locally — results stay on your device.</li>
-            <li><strong>Creative / Story Apps</strong>: All content you create (stories, messages, etc.) is stored only on your device.</li>
+            <li><strong>Location Services</strong>: If an app provides map or location-based tools, precise location is processed locally on your device to show relevant info. We do not store your location history on our servers.</li>
+            <li><strong>Local Network</strong>: Used only in apps that require interaction with local files or nearby devices (like Minecraft world importing).</li>
         </ul>
 
         <h2>4. Advertisements (AdMob)</h2>
-        <p>Some apps display ads to keep them free. Ads are provided by <strong>Google AdMob</strong>:</p>
+        <p>Some apps display ads. These are provided by <strong>Google AdMob</strong>:</p>
         <ul>
-            <li>AdMob may collect: Advertising ID (IDFA), device type, OS version, and app usage patterns.</li>
-            <li>Ads may be personalized based on your interests (if you allow tracking).</li>
-            <li>You will see Apple’s <strong>App Tracking Transparency</strong> prompt. You can deny tracking — you’ll still see ads, just less personalized.</li>
+            <li>AdMob may collect Advertising IDs (IDFA) to show relevant ads.</li>
+            <li>You can opt-out of personalized tracking via the "App Tracking Transparency" prompt on iOS.</li>
             <li>Full details: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
         </ul>
 
         <h2>5. Subscriptions & In-App Purchases</h2>
-        <p>Some apps offer premium features via subscription:</p>
+        <p>For apps offering premium features via subscription:</p>
         <ul>
-            <li>Payments are handled securely by <strong>Apple</strong> through the App Store.</li>
-            <li>I use <strong>RevenueCat</strong> to manage subscription status (active/cancelled).</li>
-            <li>I do <strong>not</strong> see or store any payment details — everything is processed by Apple.</li>
-            <li>Only anonymous subscription status is shared with RevenueCat to unlock features.</li>
-            <li>See: <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
+            <li><strong>Payment Processing</strong>: All payments are handled securely by Apple. I never see or store your credit card or bank details.</li>
+            <li><strong>Subscription Management</strong>: I use <strong>RevenueCat</strong> to verify your purchase status. This uses an anonymous ID to confirm if your subscription is active.</li>
+            <li><strong>Restore Purchases</strong>: You can always restore your purchases on any device linked to your Apple ID.</li>
         </ul>
+
+        <div class="tos-box">
+            <strong>Subscription Terms (Auto-Renewal):</strong><br>
+            Subscriptions automatically renew unless auto-renew is turned off at least 24-hours before the end of the current period. Your iTunes Account will be charged for renewal within 24-hours prior to the end of the current period. You can manage or turn off auto-renew in your Apple ID Account Settings at any time after purchase.
+        </div>
 
         <h2>6. Third-Party Services</h2>
-        <p>I use trusted third-party services with their own privacy policies:</p>
+        <p>I use trusted third-party services to help run my apps:</p>
         <ul>
-            <li><a href="https://policies.google.com/privacy" target="_blank">Google Firebase Analytics & AdMob</a> – Analytics and advertising</li>
-            <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> – Subscription management</li>
-            
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Firebase & AdMob</a> (Analytics & Ads)</li>
+            <li><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a> (Subscription Logic)</li>
         </ul>
 
-        <h2>7. Permissions</h2>
-        <p>I only request permissions that are essential:</p>
-        <ul>
-            <li><strong>Location</strong>: Only in apps that need it (e.g., tower finder) — you can deny it.</li>
-            <li>No access to camera, microphone, contacts, or photos unless clearly needed and explained.</li>
-        </ul>
+        <h2>7. Children’s Privacy</h2>
+        <p>My apps are not directed at children under 13. I do not knowingly collect personal data from children. If any such data is found, it is deleted immediately.</p>
 
-        <h2>8. How to Control Your Data</h2>
-        <ul>
-            <li>Delete any app → all local data is removed immediately.</li>
-            <li>Reset Advertising ID: Settings → Privacy & Security → Advertising → Reset Advertising Identifier.</li>
-            <li>Limit Ad Tracking: Settings → Privacy & Security → Apple Advertising → Turn off Personalized Ads.</li>
-        </ul>
-
-        <h2>9. Children’s Privacy</h2>
-        <p>My apps are not directed at children under 13. I do not knowingly collect data from children. If this happens, I will delete it immediately.</p>
-
-        <h2>10. Changes to This Policy</h2>
-        <p>I may update this policy occasionally. The “Last updated” date at the top will always be current. Continued use of any app means you accept the changes.</p>
-
-        <h2>11. Contact Me</h2>
-        <p>Questions or concerns? I’m always happy to help.</p>
+        <h2>8. Contact Me</h2>
+        <p>If you have questions regarding this policy or your data, please contact me:</p>
         <p>Email: <a href="mailto:jayeshddhanesha@gmail.com">jayeshddhanesha@gmail.com</a></p>
 
         <div class="footer">
-            <p>© 2025 Jayesh Dhanesha • All Apps</p>
-            <p>Thank you for using my apps ❤️</p>
+            <p>© 2026 Jayesh Dhanesha • All Apps</p>
+            <p>Providing safe and private tools for iOS users ❤️</p>
         </div>
     </div>
 </body>
